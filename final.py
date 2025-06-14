@@ -92,7 +92,7 @@ if query:
 
 st.markdown("""
     <div class="footer">
-        🛠️ Created by <a href="https://github.com/DeepRulz" target="_blank">Deep Shah</a>
+        Created by <a href="https://github.com/DeepRulz" target="_blank">Deep Shah</a> and <a href="https://github.com/Rihaan-Shaikh" target="_blank">Rihaan Sheikh</a>
     </div>
 """, unsafe_allow_html=True)
 
