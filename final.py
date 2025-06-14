@@ -60,3 +60,6 @@ if query:
             st.chat_message("user").markdown(msg)
         else:
             st.chat_message("assistant").markdown(msg)
+
+st.markdown("<hr style='margin-top:2em;'>", unsafe_allow_html=True)
+st.markdown("🛠️ Created by **Deep Shah**", unsafe_allow_html=True)
