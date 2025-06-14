@@ -1,3 +1,9 @@
+
+from sentence_transformers import SentenceTransformer
+import faiss
+import pickle
+import google.generativeai as genai
+import streamlit as st
 st.markdown("""
     <style>
     .footer {
@@ -23,11 +29,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-from sentence_transformers import SentenceTransformer
-import faiss
-import pickle
-import google.generativeai as genai
-import streamlit as st
 
 st.set_page_config(page_title="Legal Assistant")
 st.title("RTI Legal Assistant")
