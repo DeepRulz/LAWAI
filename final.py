@@ -1,3 +1,28 @@
+st.markdown("""
+    <style>
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #0e1117;
+        color: gray;
+        text-align: center;
+        padding: 10px;
+        font-size: 0.9rem;
+        z-index: 100;
+        border-top: 1px solid #333;
+    }
+    .footer a {
+        color: #3399ff;
+        text-decoration: none;
+    }
+    .footer a:hover {
+        text-decoration: underline;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 from sentence_transformers import SentenceTransformer
 import faiss
 import pickle
@@ -63,9 +88,9 @@ if query:
         else:
             st.chat_message("assistant").markdown(msg)
 
-footer_placeholder.markdown(
-    "<div style='text-align: center; margin-top: 2em; color: gray;'>"
-    "🛠️ Created by Deep Shah"
-    "</div>",
-    unsafe_allow_html=True
-)
+st.markdown("""
+    <div class="footer">
+        🛠️ Created by <a href="https://github.com/deep-shah-ai" target="_blank">Deep Shah</a>
+    </div>
+""", unsafe_allow_html=True)
+
