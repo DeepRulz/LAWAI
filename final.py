@@ -64,4 +64,4 @@ if query:
 st.markdown(
     "<div style='text-align: center; margin-top: 2em; color: gray;'>"
     "🛠️ Created by <a href='https://github.com/yourusername' target='_blank'><b>Deep Shah</b></a>"
-    "</div>", unsafe_allow_html=True
+    "</div>", unsafe_allow_html=True)
