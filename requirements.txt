@@ -1,5 +1,4 @@
 sentence_transformers
 faiss-cpu
-pickle
 google.generativeai
 streamlit
