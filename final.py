@@ -61,5 +61,7 @@ if query:
         else:
             st.chat_message("assistant").markdown(msg)
 
-st.markdown("<hr style='margin-top:2em;'>", unsafe_allow_html=True)
-st.markdown("🛠️ Created by **Deep Shah**", unsafe_allow_html=True)
+st.markdown(
+    "<div style='text-align: center; margin-top: 2em; color: gray;'>"
+    "🛠️ Created by <a href='https://github.com/yourusername' target='_blank'><b>Deep Shah</b></a>"
+    "</div>", unsafe_allow_html=True
