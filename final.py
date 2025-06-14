@@ -4,6 +4,10 @@ import faiss
 import pickle
 import google.generativeai as genai
 import streamlit as st
+
+st.set_page_config(page_title="Legal Assistant")
+st.title("RTI Legal Assistant")
+
 st.markdown("""
     <style>
     .footer {
@@ -30,10 +34,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-st.set_page_config(page_title="Legal Assistant")
-st.title("RTI Legal Assistant")
-# Placeholder to render footer later
-footer_placeholder = st.empty()
+
 
 GEMINI_API_KEY = "AIzaSyAc_IaJ5dTGKL6VOjpPQK1gX7CjiPiNnrw"
 genai.configure(api_key=GEMINI_API_KEY)
