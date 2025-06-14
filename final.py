@@ -6,6 +6,8 @@ import streamlit as st
 
 st.set_page_config(page_title="Legal Assistant")
 st.title("RTI Legal Assistant")
+# Placeholder to render footer later
+footer_placeholder = st.empty()
 
 GEMINI_API_KEY = "AIzaSyAc_IaJ5dTGKL6VOjpPQK1gX7CjiPiNnrw"
 genai.configure(api_key=GEMINI_API_KEY)
@@ -61,5 +63,9 @@ if query:
         else:
             st.chat_message("assistant").markdown(msg)
 
-st.markdown("---")
-st.markdown("<small style='text-align: center; display: block; color: #777;'><i>Created By Deep Shah.</i></small>", unsafe_allow_html=True)
+footer_placeholder.markdown(
+    "<div style='text-align: center; margin-top: 2em; color: gray;'>"
+    "🛠️ Created by Deep Shah"
+    "</div>",
+    unsafe_allow_html=True
+)
